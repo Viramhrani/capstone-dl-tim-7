@@ -1,5 +1,7 @@
 {
-  "sumber": "https://… (tautan dataset dari kartu Kasus tim di Workbench)",
-  "berkas": ["data/latih.csv"],
-  "catatan": "Isi pada Sprint 0: versi/tanggal unduh, jumlah baris, dan perubahan (bila ada). Berkas data sendiri tidak di-commit."
+  "sumber": "https://github.com/sains-data/capstone-dl-2026-starter",
+  "berkas": [
+    "data/peregangan_meja.npz"
+  ],
+  "catatan": "Dataset primer Tim 7: Penghitung repetisi peregangan meja kerja. 8 Partisipan (P01-P08), 4 jenis latihan, 2 ulangan, rekaman 20 detik @ 10 fps (200 frame x 36 fitur pose sendi)."
 }

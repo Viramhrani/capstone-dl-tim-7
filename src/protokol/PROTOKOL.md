@@ -1,4 +1,4 @@
-# Protokol evaluasi tim — <Nama tim>
+# Protokol evaluasi tim — Tim 7
 
 Diisi Penjaga Data & Evaluasi pada Sprint 0, digabung ke `main` lewat *pull request* yang
 disetujui pembimbing, lalu **dibekukan**. Perubahan setelah itu hanya lewat *pull request*
@@ -6,16 +6,16 @@ baru yang disetujui pembimbing.
 
 | Butir | Isi |
 |---|---|
-| Kasus (dari kartu Kasus tim) | … |
-| Sumber dataset | … (tautan dari kartu Kasus tim) |
-| Jenis tugas (`TUGAS`) | klasifikasi / regresi |
-| Target / label | … |
-| Ukuran data latih / validasi / uji | … / … / … |
-| Cara split | `split.indeks` seed 2026, porsi validasi 10 % (atau `indeks_urut` untuk deret waktu) |
-| Metrik utama untuk komparasi | macro-F1 (klasifikasi) / RMSE (regresi) |
-| Praproses yang sama untuk semua model | … |
-| Anggaran komputasi per run | ≤ 20 menit CPU laptop (atau yang disetujui pembimbing) |
-| Evaluasi data uji | sekali, oleh Penjaga Data, pada sprint terakhir (`--final`) |
-| `data_hash` saat dibekukan | … (dari `results/baseline/metrics.json`) |
+| Kasus (dari kartu Kasus tim) | Penghitung repetisi peregangan meja kerja: hitung repetisi + klasifikasi latihan dari Urutan pose 10 fps, 20 s, dengan pembanding non-deep-learning dan batasan ukuran/latensi untuk dipasang kembali di laptop meja. |
+| Sumber dataset | https://github.com/sains-data/capstone-dl-2026-starter (Data primer direkam mandiri di meja uji) |
+| Jenis tugas (`TUGAS`) | regresi |
+| Target / label | Jumlah repetisi peregangan (desain 10 repetisi per kondisi) |
+| Ukuran data latih / validasi / uji | 40 sekuens (P01–P05) / 8 sekuens (P06) / 16 sekuens (P07–P08) |
+| Cara split | Pemisahan berbasis Partisipan (GroupKFold / Holdout partisipan independen) |
+| Metrik utama untuk komparasi | MAE (Mean Absolute Error) jumlah repetisi, stabilitas 3 seed, ukuran ONNX (KB), dan latensi inferensi (ms) |
+| Praproses yang sama untuk semua model | 1 detik pertama (10 frame awal) dibuang, normalisasi fitur dihitung murni dari data latih |
+| Anggaran komputasi per run | ≤ 20 menit CPU laptop meja |
+| Evaluasi data uji | Sekali, oleh Penjaga Data & Evaluasi, pada sprint terakhir (`--final`) |
+| `data_hash` saat dibekukan | aeda5c2993d852ca51dea5162745d11c |
 
-Disetujui pembimbing pada: … (tautan *pull request*)
+Disetujui pembimbing pada: Menunggu review Sprint 0
