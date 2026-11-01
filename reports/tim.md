@@ -22,9 +22,9 @@ Tabel komparasi model akan dirakit secara otomatis melalui `run_all.py` dari `re
 ## Analisis
 Setiap arsitektur memiliki karakteristik unik dalam menangkap dinamika temporal koordinat sendi:
 - **CNN (1D Temporal):** Efisien mendeteksi pola periodisitas lokal repetisi dengan jumlah parameter terkecil dan latensi paling rendah.
-- **RNN (Bi-GRU):** Menangkap ketergantungan temporal jangka panjang transisi fase peregangan.
 - **Transformer:** Menangkap korelasi spasial-temporal antar-sendi tubuh secara global, namun membutuhkan optimasi agar tetap hemat memori di laptop meja.
 - **Autoencoder:** Efektif mereduksi noise postural partisipan ke dalam ruang representasi laten yang kompak sebelum regresi.
+- **RNN (Bi-GRU):** Menangkap ketergantungan temporal jangka panjang transisi fase peregangan.
 
 ## Rekomendasi
 Model yang direkomendasikan untuk purwarupa Sprint 2 adalah model dengan nilai MAE repetisi terendah yang tetap memenuhi batas latensi inferensi di laptop meja (< 50 ms) dan ukuran ONNX < 1 MB.
@@ -33,8 +33,8 @@ Model yang direkomendasikan untuk purwarupa Sprint 2 adalah model dengan nilai M
 | Anggota | NIM | Jalur | Tugas Sampingan | Bagian Laporan yang Ditulis |
 |---|---|---|---|---|
 | Vira Putri Maharani | 122450129 | CNN (1D-CNN) | Koordinator Tim | Ringkasan, Rekomendasi, dan Integrasi Laporan |
-| Arya Muda Siregar | 123450063 | RNN (Bi-GRU) | Penjaga Data & Evaluasi | Protokol, Normalisasi, dan Evaluasi Data Uji |
-| Salsabila Putri Maharani | 123450070 | Transformer | Integrator Sistem & Purwarupa | Arsitektur Sistem, Purwarupa Sprint 2 |
-| Monica Patricia Tanjung | 123450073 | Autoencoder (AE) | Penguji Purwarupa & Optimasi ONNX | Benchmark Latensi Laptop, Kompresi ONNX |
+| Arya Muda Siregar | 123450063 | Transformer (TRF) | Integrator | Penggabungan Model & Format Sekuens |
+| Salsabila Putri Maharani | 123450070 | Autoencoder (AE) | Analis Utama | Analisis Karakteristik Model & Komparasi |
+| Monica Patricia Tanjung | 123450073 | RNN (Bi-GRU) | Penjaga Data & Evaluasi | Protokol, Normalisasi, dan Evaluasi Data Uji |
 
 Komponen yang tidak tersedia (bila ada): Tidak ada; seluruh 4 jalur model telah terisi dan terdistribusi merata.
