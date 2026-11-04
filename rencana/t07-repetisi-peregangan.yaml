@@ -1,0 +1,54 @@
+# Rekonstruksi rencana eksperimen Tim 7 berdasarkan lampiran
+# "Tim 7: Penghitung repetisi peregangan meja kerja", bagian Lampiran: rencana asli.
+# Cocokkan dengan berkas asli di repositori sebelum diserahkan sebagai versi final.
+
+tim: 7
+judul: "Penghitung repetisi peregangan meja kerja"
+pembimbing: "Ahmad Luky Ramdani"
+pilar: "Gerak"
+seed: 1007
+ulangan: 2
+durasi_kondisi_detik: 20
+jeda_detik: 0.5
+
+rekam:
+  audio:
+    aktif: false
+  kamera:
+    aktif: true
+    interval_detik: 0.1
+    lebar: 640
+    tinggi: 480
+
+faktor:
+  partisipan:
+    jenis: manual
+    taraf:
+      - P01
+      - P02
+      - P03
+      - P04
+      - P05
+      - P06
+      - P07
+      - P08
+    instruksi: "Partisipan {taraf} siap di posisi (formulir persetujuan sudah ditandatangani)"
+  latihan:
+    jenis: isyarat
+    taraf:
+      - "putar bahu"
+      - "angkat kedua lengan"
+      - "putar leher pelan"
+      - "peregangan pergelangan"
+    instruksi: "Lakukan 10 kali: {taraf}"
+
+metode:
+  jenis_tugas: "Hitung repetisi + klasifikasi latihan"
+  masukan_model: "Urutan pose 10 fps, 20 s"
+  metrik_utama: "MAE jumlah repetisi"
+  jalur:
+    - CNN
+    - RNN
+    - Transformer
+    - AE
+  pembanding_non_dl: "Hitung puncak sinyal sudut sendi"
