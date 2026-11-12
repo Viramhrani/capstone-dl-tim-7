@@ -1,0 +1,12 @@
+{
+  "model": "cnn",
+  "nim": "122450129",
+  "seed": 1,
+  "arsitektur": "4 x Conv1d + BatchNorm + ReLU (dilation 1,2,4,8) + AdaptiveAvgPool1d(12) + MLP",
+  "epoch_maks": 140,
+  "patience": 30,
+  "best_epoch": 52,
+  "best_val_mae": 0.196114,
+  "durasi_detik": 15.4,
+  "catatan": "Checkpoint terbaik dipilih dari validation MAE; data uji P07/P08 tidak dipakai pada Sprint 1."
+}
