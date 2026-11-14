@@ -10,3 +10,4 @@ melainkan "mengerti atau tidak" — isi kolom terakhir dengan apa yang Anda ubah
 | 2026-10-31 | 123450063 | Claude | Template Multi-Head Self-Attention untuk data deret waktu pose | Menyesuaikan dimensi model menjadi $d_{model}=48$ dan $nhead=4$ agar waktu komputasi $\le 20$ menit CPU laptop |
 | 2026-10-31 | 123450070 | Copilot | Boilerplate arsitektur Joint Autoencoder-Regressor | Mengubah loss function regresi dari MSE menjadi L1 Loss agar selaras dengan metrik MAE repetisi tim |
 | 2026-10-31 | 123450073 | ChatGPT | Skema recurrent Bi-GRU dan pembagian GroupKFold berbasis ID Partisipan | Memastikan 1 detik pertama tiap kondisi dibuang dan normalisasi dihitung hanya dari data latih (mencegah data leakage) |
+| 2026-11-14 | 122450129 | Gemini | Implementasi skrip gladi simulasi meja.py dan modul uji verifikasi 64 kondisi | Menyesuaikan generator jadwal agar seed 1007 menghasilkan tepat 8 blok x 8 kondisi dengan durasi 20s dan jeda 0.5s |
