@@ -2,16 +2,16 @@
 
 **Tanggal Slot:** _________________________  
 **Waktu:** ________________ WIB  
-**Operator:** Vira Putri Maharani  
-**Pencatat:** Monica Patricia Tanjung  
-**Koordinator Partisipan:** Salsabila Putri Maharani  
-**Pengawas:** Arya Muda Siregar  
+**Koordinator Partisipan:** Vira Putri Maharani (122450129)  
+**Operator Perekam:** Salsabila Putri Maharani (123450070)  
+**Operator Alat:** Monica Patricia Tanjung (123450073)  
+**Pencatat Kejadian & Penjaga Bingkai Kamera:** Arya Muda Siregar (123450063)  
 
 ---
 
 ## Catatan Kondisi (1 s.d. 64)
 
-| No Kondisi | Blok | ID Partisipan | Gerakan Peregangan | Ulangan | Hitungan Pencatat | Catatan / Gangguan / Anomali |
+| No Kondisi | Blok | ID Partisipan | Gerakan Peregangan | Ulangan | Hitungan Pengamat | Catatan / Gangguan / Anomali |
 |---|---|---|---|---|---|---|
 | 01 | 1 | P06 | peregangan pergelangan | 2 | _____ | |
 | 02 | 1 | P06 | putar leher pelan | 1 | _____ | |
@@ -79,7 +79,7 @@
 | 64 | 8 | P01 | peregangan pergelangan | 2 | _____ | |
 
 ---
-**Tanda Tangan Pengesahan:**
+**Tanda Tangan Pengesahan Lapangan:**
 
-Pencatat: ____________________  
-Operator: ____________________
+Pencatat Kejadian: ____________________ (Arya Muda Siregar)  
+Koordinator Partisipan: ____________________ (Vira Putri Maharani)

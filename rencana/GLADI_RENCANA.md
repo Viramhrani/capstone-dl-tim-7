@@ -58,7 +58,16 @@ Sesuai instruksi khusus kasus Tim 7 dan panduan metode eksperimen lapangan:
 
 ---
 
-## 3. Prosedur Latihan Kering (*Dry Run*)
+## 3. Pembagian Peran Anggota Tim Saat Slot
+Pembagian peran lapangan yang disepakati untuk slot pengambilan data:
+- **Vira Putri Maharani (122450129)** : Koordinator Partisipan
+- **Salsabila Putri Maharani (123450070)** : Operator Perekam
+- **Monica Patricia Tanjung (123450073)** : Operator Alat
+- **Arya Muda Siregar (123450063)** : Pencatat Kejadian dan Penjaga Bingkai Kamera
+
+---
+
+## 4. Prosedur Latihan Kering (*Dry Run*)
 Sebelum sesi rekaman sebenarnya di meja uji, tim melakukan latihan kering tanpa perangkat meja:
 1. **Instruksi Standar:**
    Operator membacakan instruksi dengan kalimat baku yang sama kepada setiap partisipan:

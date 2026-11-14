@@ -9,14 +9,14 @@
 ---
 
 ## 1. Pembagian Peran Anggota Tim Saat Slot
-Sesuai kesepakatan pembagian tugas lapangan pada saat sesi pengambilan data di meja uji:
+Sesuai kesepakatan pembagian tugas lapangan pada saat sesi pengambilan data di meja uji (komentar Vira Putri Maharani tanggal 10 Nov 2026):
 
 | Nama Anggota | NIM | Peran Utama di Slot | Tanggung Jawab Teknis Lapangan |
 |---|---|---|---|
-| **Vira Putri Maharani** | 122450129 | **Operator Meja & Perekam** | Mengoperasikan laptop meja uji, memverifikasi `python meja.py periksa`, memeriksa pratinjau citra webcam ($640 \times 480$), menekan tombol Enter saat blok partisipan berganti, dan memantau status perekaman ESP32. |
-| **Salsabila Putri Maharani** | 123450070 | **Koordinator Partisipan** | Menyambut partisipan P01–P08, memastikan formulir persetujuan etika ditandatangani, memeriksa busana partisipan (kontras, sendi terlihat), mendudukkan partisipan di kursi bertanda selotip, dan mengatur urutan giliran blok. |
-| **Monica Patricia Tanjung** | 123450073 | **Pencatat Sesi & Metronom** | Memegang ponsel dengan metronom (tempo 1 ketukan / 2 detik), menghitung repetisi kasat mata secara independen, dan menuliskan catatan jumlah repetisi serta kondisi gangguan pada Lembar Sesi. |
-| **Arya Muda Siregar** | 123450063 | **Pengawas Mutu & Logistik** | Memeriksa stabilitas pencahayaan meja kerja, memastikan tidak ada orang yang melintas di latar belakang kamera selama kondisi aktif, dan membantu pencadangan data segera setelah sesi selesai. |
+| **Vira Putri Maharani** | 122450129 | **Koordinator Partisipan** | Menyambut partisipan P01–P08, memastikan formulir persetujuan etika ditandatangani, memeriksa busana partisipan (warna kontras, sendi kepala/leher/bahu/lengan tidak tertutup), mendudukkan partisipan di kursi bertanda selotip, dan mengoordinasikan kesiapan tiap blok. |
+| **Salsabila Putri Maharani** | 123450070 | **Operator Perekam** | Mengoperasikan antarmuka laptop perekam meja uji, menjalankan `python meja.py jalankan rencana/t07-repetisi-peregangan.yaml`, menekan Enter setelah partisipan siap di awal setiap blok, dan memantau status rekaman kondisi. |
+| **Monica Patricia Tanjung** | 123450073 | **Operator Alat** | Memeriksa perangkat keras meja 5V (`python meja.py periksa`), memastikan sensor ESP32, daya, dan aktuator terhubung, memegang metronom ponsel (tempo 1 ketukan per 2 detik / 30 BPM) untuk memandu ritme repetisi partisipan. |
+| **Arya Muda Siregar** | 123450063 | **Pencatat Kejadian dan Penjaga Bingkai Kamera** | Menjaga sudut pandang webcam $640 \times 480$ agar seluruh persendian atas partisipan masuk bingkai, memastikan area bebas dari orang melintas, menghitung repetisi kasat mata secara langsung, dan mencatat nomor kondisi serta gangguan pada Lembar Sesi. |
 
 ---
 
@@ -36,9 +36,10 @@ Sesuai kesepakatan pembagian tugas lapangan pada saat sesi pengambilan data di m
 1. **Pergantian Blok:**
    - Skrip berhenti sejenak di akhir kondisi ke-8 pada suatu blok dan menampilkan pesan:
      `Siapkan: Partisipan Pxx siap di posisi (formulir persetujuan sudah ditandatangani)`.
-   - Koordinator mengarahkan partisipan berikutnya untuk duduk dan tenang.
-   - Operator memastikan seluruh tubuh atas berada di dalam bingkai, lalu menekan Enter untuk memulai blok.
+   - Koordinator Partisipan (Vira) mengarahkan partisipan berikutnya untuk duduk dan tenang.
+   - Penjaga Bingkai Kamera (Arya) mengonfirmasi posisi tubuh partisipan berada dalam bingkai.
+   - Operator Perekam (Salsabila) menekan Enter untuk memulai blok.
 2. **Penanganan Gangguan (Insiden):**
    - Apabila terjadi gerakan salah, batuk, atau partisipan berhenti di tengah jalan, rekaman **tidak diulang di tempat** demi menjaga integritas deret waktu.
-   - Pencatat menuliskan nomor kondisi (misal `[23/64]`) dan deskripsi insiden di Lembar Sesi.
+   - Pencatat Kejadian (Arya) menuliskan nomor kondisi (misal `[23/64]`) dan deskripsi insiden di Lembar Sesi.
    - Kondisi tersebut akan dievaluasi pada saat pemeriksaan mutu data di luar slot.
