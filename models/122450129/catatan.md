@@ -36,5 +36,8 @@ python models/122450129/run.py --seed 1
 ```
 Keluaran: `results/122450129/metrics.json`, `results/122450129/pred_val.npy`, dan `results/122450129/training_log.json`.
 
+Uji asap kerangka pada data simulasi: `python models/122450129/uji_simulasi.py`
+(lihat `UJI_SIMULASI.md`).
+
 ## Catatan Integritas
 Fallback ridge NumPy pada versi lama **dihapus** karena bukan CNN dan menghasilkan metrik yang tidak merepresentasikan jalur CNN. Model sekarang mewajibkan PyTorch; requirements tim sudah memuat `torch>=2.2`.

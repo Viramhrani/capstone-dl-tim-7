@@ -1,0 +1,4 @@
+$ C:\Users\asus\AppData\Local\Programs\Python\Python311\python.exe models/122450129/run.py --seed 1
+{"val_rmse": 0.038573, "val_mae": 0.03315, "val_r2": 0.999759} -> results\122450129\metrics.json
+CNN seed=1: best_epoch=108 val_MAE=0.0332 durasi=55.1s
+PASS uji simulasi: val_MAE=0.033150 val_RMSE=0.038573 val_R2=0.999759 best_epoch=108 pred_shape=(8,) data_hash=699b9f44c8b9ba6f86643b7fa01ecbeb
