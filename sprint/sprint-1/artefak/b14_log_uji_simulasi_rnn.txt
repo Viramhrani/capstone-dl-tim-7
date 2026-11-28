@@ -1,0 +1,44 @@
+=== UJI KERANGKA RNN (PoseBiGRU) PADA DATA SIMULASI (#14) ===
+{
+  "status": "PASS",
+  "bentuk_tensor": {
+    "input_x": [
+      8,
+      190,
+      36
+    ],
+    "gru_output_bidirectional": [
+      8,
+      190,
+      96
+    ],
+    "gru_hidden_state": [
+      2,
+      8,
+      48
+    ],
+    "after_layernorm_transpose": [
+      8,
+      96,
+      190
+    ],
+    "after_adaptive_avg_pool24": [
+      8,
+      96,
+      24
+    ],
+    "output_prediksi": [
+      8
+    ],
+    "ada_nan_output": false
+  },
+  "loss_5_epoch_simulasi": [
+    0.84417,
+    0.5218,
+    0.43496,
+    0.3785,
+    0.2653
+  ],
+  "val_mae_simulasi_5_epoch": 0.4556,
+  "durasi_detik": 8.0
+}
