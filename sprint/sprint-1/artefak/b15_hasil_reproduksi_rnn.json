@@ -1,0 +1,16 @@
+{
+  "nim": "123450063",
+  "model": "rnn",
+  "seed": 1,
+  "data_hash": "aeda5c2993d852ca51dea5162745d11c",
+  "jumlah_parameter": 172545,
+  "best_epoch": 37,
+  "total_epoch_jalan": 57,
+  "durasi_latih_detik": 320.82,
+  "latensi_inferensi_ms": 92.02,
+  "val_mae": 0.188209,
+  "val_rmse": 0.24534,
+  "val_r2": 0.988198,
+  "n_val": 8,
+  "n_test": 0
+}

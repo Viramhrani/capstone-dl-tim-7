@@ -1,0 +1,2 @@
+=== REPRODUKSI RNN Bi-GRU SEED 1 (#15) ===
+best_epoch=37/57 | val_MAE=0.188209 | val_RMSE=0.245340 | val_R2=0.988198 | durasi=320.8s | latensi=92.02 ms | params=172,545 | data_hash=aeda5c2993d852ca51dea5162745d11c | n_test=0
